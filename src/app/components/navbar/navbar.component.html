@@ -1,0 +1,11 @@
+<p>Hello World</p>
+
+<ul ngbNav #nav="ngbNav" class="nav-tabs">
+    <li ngbNavItem>
+        <button ngbNavLink [routerLink]="['']">Home</button>
+    </li>
+    <li ngbNavItem>
+        <button ngbNavLink [routerLink]="['LeagueTable']">League Table</button>
+    </li>
+</ul>
+<div [ngbNavOutlet]="nav"></div>

@@ -1,0 +1,31 @@
+<ng-container *ngFor="let response of myResponse.response">
+<div>
+    <h1>{{response.league.name}}</h1>
+    <p>{{myResponse.get}} testing</p>
+</div>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Team</th>
+            <th scope="col">Goal Difference</th>
+            <th scope="col">Points</th>
+            <th scope="col">Form</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let standings of response.league.standings">
+        <tr *ngFor="let standItem of standings">
+            <th scope="row">{{ standItem.rank }}</th>
+            <td>
+                <!-- <img [src]="'https://upload.wikimedia.org/wikipedia/commons/' + country.flag" class="me-2"
+                    style="width: 20px" /> -->
+                {{standItem.team.name}}
+            </td>
+            <td>{{ standItem.goalsDiff }}</td>
+            <td>{{ standItem.points }}</td>
+            <td>{{standItem.form}}</td>
+        </tr>
+    </tbody>
+</table>
+</ng-container>
