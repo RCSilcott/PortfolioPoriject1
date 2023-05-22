@@ -1,7 +1,6 @@
 <ng-container *ngFor="let response of myResponse.response">
 <div>
     <h1>{{response.league.name}}</h1>
-    <p>{{myResponse.get}} testing</p>
 </div>
 
 <table class="table table-striped">
@@ -20,7 +19,7 @@
             <td>
                 <!-- <img [src]="'https://upload.wikimedia.org/wikipedia/commons/' + country.flag" class="me-2"
                     style="width: 20px" /> -->
-                {{standItem.team.name}}
+                <a [routerLink]="['TeamPage/'+ standItem.team.id]">{{standItem.team.name}}</a>
             </td>
             <td>{{ standItem.goalsDiff }}</td>
             <td>{{ standItem.points }}</td>

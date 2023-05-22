@@ -10,6 +10,7 @@ import { LeagueTablePageComponent } from './components/league-table-page/league-
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { LeagueTableComponentComponent } from './components/league-table-page/league-table-component/league-table-component.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { TeamPageComponent } from './components/team-page/team-page.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HomePageComponentComponent,
     LeagueTablePageComponent,
     NavbarComponent,
-    LeagueTableComponentComponent
+    LeagueTableComponentComponent,
+    TeamPageComponent
   ],
   imports: [
     BrowserModule,

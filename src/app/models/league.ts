@@ -1,3 +1,5 @@
+import { Team } from "./team/team"
+
 export interface StandingResponse {
     get: string,
     response: ResponseBlock[]
@@ -32,12 +34,6 @@ export interface StandingItem {
     update: Date
 }
 
-export interface Team {
-    id: string,
-    name: string,
-    logo: string
-
-}
 
 export interface Record {
     played: Number,
